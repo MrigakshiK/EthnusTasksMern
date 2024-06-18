@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      /* Basic styling for the vertical navbar */
+      .vnavbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100px; /* Width of the vertical navbar */
+        background-color: #333;
+        position: fixed; /* Fixed position so it stays on the side */
+        height: 100%; /* Full height of the viewport */
+        overflow: auto; /* Enable scrolling if needed */
+      }
+
+      .vnavbar li {
+        text-align: center; /* Center-align text in list items */
+        padding: 10px 0; /* Padding for each list item */
+      }
+
+      .vnavbar li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px; /* Padding for anchor tags */
+      }
+
+      .vnavbar li a:hover {
+        background-color: #555; /* Darker background on hover */
+      }
+      /* Basic styling for the horizontal navbar */
+      .hnavbar {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        background-color: #333;
+        overflow: hidden; /* Clear floats */
+      }
+
+      .hnavbar li {
+        float: left; /* Float list items to left for horizontal layout */
+      }
+
+      .hnavbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .hnavbar li a:hover {
+        background-color: #111; /* Darker background on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Vertical Navigation Bar -->
+    <ul class="vnavbar">
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section2">Java</a></li>
+      <li><a href="#section3">CSS</a></li>
+      <li><a href="#section4">HTML</a></li>
+      <li><a href="#section5">Bootstrap</a></li>
+    </ul>
+
+    <!-- Horizontal Navigation Bar -->
+    <ul class="hnavbar">
+      <li><a href="#services"></a></li>
+      <li><a href="#services"></a></li>
+      <li><a href="#services"></a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">Java</a></li>
+      <li><a href="#contact">HTML</a></li>
+      <li><a href="#about">CSS</a></li>
+    </ul>
+    <!-- Content Section -->
+    <div style="margin-left: 200px; padding: 20px">
+      <!-- Adjust margin-left to match navbar width -->
+      <h2>Content Section</h2>
+      <p>
+        This is the main content area. Adjust the margin-left of the content to
+        match the width of the vertical navbar.
+      </p>
+    </div>
+  </body>
+</html>

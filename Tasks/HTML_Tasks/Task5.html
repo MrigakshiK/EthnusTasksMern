@@ -1,12 +1,9 @@
-Updates to keyboard shortcuts … On Thursday, August 1, 2024, Drive keyboard
-shortcuts will be updated to give you first-letters navigation.Learn more
-forms.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Task 5</title>
     <style>
       table,
       tr,
@@ -20,46 +17,123 @@ forms.html
   </head>
   <body>
     <h1>Registration Form</h1>
-    <!-- <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" />
-      <label for="contact">Contact</label>
-      <input type="number" id="contact" />
-    </form> -->
     <table>
       <tr>
         <td>
-          <label for="name">Name</label>
+          <label for="name">First Name</label>
         </td>
         <td>
-          <input type="text" id="name" />
+          <input type="text" id="fname" />
         </td>
       </tr>
       <tr>
         <td>
-          <label for="contact">Contact</label>
+          <label for="lname">Last Name</label>
         </td>
         <td>
-          <input type="number" />
+          <input type="text" />
         </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="mail">Email</label>
+        </td>
+        <td>
+          <input type="email" id="mail" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="pwd">Password</label>
+        </td>
+        <td>
+          <input type="password" id="pwd" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="pwd">Re-enter Password</label>
+        </td>
+        <td>
+          <input type="password" id="rpwd" />
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <label for="gender">Gender</label>
+        </td>
+        <td><input type="radio" name="gender" value="m" />Male</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="gender" value="f" />Female</td>
+      </tr>
+      <tr>
+        <td>
+          <label for="age">Age</label>
+        </td>
+        <td>
+          <input type="number" id="age" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="phno">Phone Number</label>
+        </td>
+        <td>
+          <input type="number" id="phno" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="address">Address</label>
+        </td>
+        <td>
+          <input type="text" id="address" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="state">State</label>
+        </td>
+        <td>
+          <input type="text" id="state" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="country">Country</label>
+        </td>
+        <td>
+          <select name="Country">
+            <option value="">Choose your country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+            <option value="Spain">Spain</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="lang">Languages Known</label>
+        </td>
+        <td>
+          <input type="checkbox" id="lang" />Hindi
+          <input type="checkbox" id="lang" />English
+          <input type="checkbox" id="lang" />Spanish
+          <input type="checkbox" id="lang" />French
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" id="" />Hereby I declare all the given details
+          are true
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Login to <a href="">Ethnus</a> website</td>
       </tr>
     </table>
-
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Contact</th>
-      </tr>
-      <tr>
-        <td>Amith</td>
-        <td>20</td>
-        <td>1234</td>
-      </tr>
-      <tr>
-        <td>Amith</td>
-        <td colspan="2">20</td>
-      </tr>
-    </table>
+    <input type="submit" value="Register" />
   </body>
 </html>
